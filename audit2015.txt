@@ -1,0 +1,50 @@
+Dear {{ given_names }} {{ surname }},
+
+The Australian Electoral Commission audits each non-parliamentary political party once per election cycle.
+
+This means that all full members that the Party submits to the AEC for the purposes of our continued registration have a chance of being contacted by an AEC representative to confirm that they are in fact a member.
+
+We are asking you to confirm that you consent to being contacted by the AEC for the purposes of ensuring the Pirate Party remains registered for Federal elections, and that you confirm your contact and enrolment details are up-to-date.
+
+A snippet of current information we have for you includes:
+
+* Email: {{ email }}
+* Primary phone (masked): {{ mask(primary_phone) }}
+* Residential postcode: {{ residential_postcode }}
+
+If this information seems accurate for your enrolment and for contact purposes, please
+confirm by clicking the link below:
+
+https://join.pirateparty.org.au/audit/{{ member_id }}
+
+If that information seems out of date or you wish to review our records, you can securely view and update your membership details below:
+
+https://join.pirateparty.org.au/update/{{ member_id }}
+
+If however you wish to resign your membership, please click the link below and follow the instructions.
+
+https://join.pirateparty.org.au/resign/{{ member_id }}
+
+If you have any questions, feel free to reply to this email.
+
+We thank you for your continued support!
+
+--
+Yours sincerely,
+
+Daniel Judge
+Secretary
+Pirate Party Australia
+
+M: 0438 255 857
+W: http://www.pirateparty.org.au
+E: daniel.judge@pirateparty.org.au
+T: @feenicks
+
+--
+Pirate Party Australia is a political party based around the core tenets of
+freedom of information and culture; civil and digital liberties; privacy
+and anonymity; and government transparency.
+
+Donate today! http://pirateparty.org.au/donate
+

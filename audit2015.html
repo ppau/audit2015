@@ -1,0 +1,50 @@
+<html><head><title>{{ tmpl_subject }}</title></head><body>
+<p>Dear {{ given_names }} {{ surname }},</p>
+
+<p>The Australian Electoral Commission audits each non-parliamentary political party once per election cycle.</p>
+
+<p>This means that all full members that the Party submits to the AEC for the purposes of our continued registration have a chance of being contacted by an AEC representative to confirm that they are in fact a member.</p>
+
+<p>We are asking you to confirm that you consent to being contacted by the AEC for the purposes of ensuring the Pirate Party remains registered for Federal elections, and that you confirm your contact and enrolment details are up-to-date.</p>
+
+<p>A snippet of current information we have for you includes:</p>
+
+<ul>
+<li>Email: <strong>{{ email }}</strong>
+<li>Primary phone (masked): <strong>{{ mask(primary_phone) }}</strong>
+<li>Residential postcode: <strong>{{ residential_postcode }}</strong>
+</ul>
+
+<p><strong>If this information seems accurate</strong> for your enrolment and for contact purposes, please confirm by clicking the link below:</p>
+
+<p><a href="https://join.pirateparty.org.au/audit/{{ member_id }}">I confirm my consent.</a></p>
+
+<p><strong>If that information seems out of date</strong> or you wish to review our records, you can securely view and update your membership details below:</p>
+
+<p><a href="https://join.pirateparty.org.au/update/{{ member_id }}">I wish to update or view my details</a></p>
+
+<p><strong>If however you wish to resign your membership</strong>, please click the link below and follow the instructions.</p>
+
+<p><a href="https://join.pirateparty.org.au/resign/{{ member_id }}">I wish to resign</a></p>
+
+<p>If you have any questions, feel free to reply to this email.</p>
+
+<p>We thank you for your continued support!</p>
+
+--<br>
+Yours sincerely,<br>
+<br>
+<strong>Daniel Judge</strong><br>
+Secretary<br>
+Pirate Party Australia<br>
+<br>
+M: 0438 255 857<br>
+W: <a href="http://www.pirateparty.org.au">http://www.pirateparty.org.au</a><br>
+E: <a href="mailto:daniel.judge@pirateparty.org.au">daniel.judge@pirateparty.org.au</a><br>
+T: <a href="https://twitter.com/feenicks">@feenicks</a><br>
+<br>
+--<br>
+Pirate Party Australia is a political party based around the core tenets of freedom of information and culture; civil and digital liberties; privacy and anonymity; and government transparency.<br>
+<br>
+Donate today! <a href="http://pirateparty.org.au/donate">http://pirateparty.org.au/donate</a><br>
+</body></html>
