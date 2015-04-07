@@ -10,14 +10,14 @@ from email.mime.multipart import MIMEMultipart
 from email.utils import formatdate
 from subprocess import Popen, PIPE
 
-logging.getLogger().setLevel(logging.DEBUG)
+logging.getLogger().setLevel(logging.INFO)
 
 def sendmail(mail):
     p = Popen(["sendmail", "-t", "-i"], stdin=PIPE)
     return p.communicate(mail.as_string().encode())
 
 def create_email(frm=None, to=None, cc=None, bcc=None, subject=None, text=None, html=None, date=None, reply_to=None, attachments=[]):
-    msg = MIMEMultipart()
+    msg = MIMEMultipart('alternative')
     if frm:
         msg["From"] = frm
     if to:
@@ -28,12 +28,12 @@ def create_email(frm=None, to=None, cc=None, bcc=None, subject=None, text=None, 
         msg["Bcc"] = bcc
     if subject:
         msg["Subject"] = subject
-    if html:
-        htmlmsg = MIMEText(html, 'html', _charset='utf-8')
-        msg.attach(htmlmsg)
     if text:
         textmsg = MIMEText(text, 'plain', _charset='utf-8')
         msg.attach(textmsg)
+    if html:
+        htmlmsg = MIMEText(html, 'html', _charset='utf-8')
+        msg.attach(htmlmsg)
     if date is None:
         msg["Date"] = formatdate(localtime=True)
     else:
