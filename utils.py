@@ -56,7 +56,7 @@ def find_by_name_pair(namepairs):
 def resign_them_all(data):
     emails = [x[2] for x in data]
 
-    mm = find_by_emails(emails)
+    mm = find_by_email(emails)
 
     namepairs = [(x[0], x[1], x[2]) for x in data if x[2] not in mm]
 
