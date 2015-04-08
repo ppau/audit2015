@@ -39,5 +39,6 @@ def safe_insert(collection, data):
     return False
 
 def find_by_email(emails):
-    return [x['_id'].hex for x in Connection().ppau.members.find({
-        "details.email": { "$in": emails }}))]
+    return [(x['details']['email'], x['_id'].hex) for x in \
+            Connection().ppau.members.find({
+                "details.email": { "$in": emails }})]
