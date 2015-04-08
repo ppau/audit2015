@@ -118,8 +118,12 @@ for n, member in enumerate(targets):
         logging.error(e)
         continue
 
-    logging.info("[%s/%s] %s" % (n+1, count, email))
 
-    sendmail(msg)
-
+    try:
+        sendmail(msg)
+        logging.info("[%s/%s] %s" % (n+1, count, email))
+    except Exception as e:
+        logging.error("[%s/%s] %s - error of some kind" % (n+1, count, email))
+        logging.error(e)
+        continue
 
