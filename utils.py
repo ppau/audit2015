@@ -67,7 +67,8 @@ def resign_them_all(data):
     print (fail)
 
     coll = Connection().ppau.members
-    safe_modify(coll, {"_id": {"$in": list(mm.values())}}, {
+    for val in mm.values():
+        safe_modify(coll, {"_id": val}, {
             "$set": {
                 "details.membership_level": "resigned",
                 "details.resigned_on": datetime.datetime.utcnow()
