@@ -39,7 +39,7 @@ def safe_insert(collection, data):
     return False
 
 def find_by_email(emails):
-    return dict([(x['details']['email'], x['_id'].hex) for x in \
+    return dict([(x['details']['email'], x['_id']) for x in \
             Connection().ppau.members.find({
                 "details.email": { "$in": emails }})])
 
@@ -50,7 +50,7 @@ def find_by_name_pair(namepairs):
         record = coll.find_one({"details.given_names": re.compile(fn, re.I),
                                 "details.surname": re.compile(sn, re.I)})
         if record is not None:
-            out.append((email, record['_id'].hex))
+            out.append((email, record['_id']))
     return dict(out)
 
 def resign_them_all(data):
@@ -65,4 +65,12 @@ def resign_them_all(data):
     fail = [x for x in data if x[2] not in mm]
 
     print (fail)
+
+    coll = Connection().ppau.members
+    safe_modify(coll, {"_id": {"$in": list(mm.values())}}, {
+            "$set": {
+                "details.membership_level": "resigned",
+                "details.resigned_on": datetime.datetime.utcnow()
+            }
+        })
 
