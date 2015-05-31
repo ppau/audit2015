@@ -1,0 +1,78 @@
+Dear {{ given_names }} {{ surname }},
+
+You are receiving this email because you are listed as a
+member of Pirate Party Australia and enrolled to vote in
+New South Wales.
+
+The Pirate Party is in the process of registering a NSW
+branch for local elections in NSW. We need your help to
+ensure this process is completed by the end of June or we
+will not be able to register before the next election.
+
+You are required:
+
+(1) To fill out the form provided using BLUE OR BLACK PEN,
+(2) To write verbatim "Pirate Party Australia (NSW Branch)"
+    into the "Full name of the Party" field,
+(3) To mail the form to the following address as soon as
+    possible (run now!):
+
+    PO Box 385
+    Figtree NSW 2525
+    Australia
+
+Don't forget to enter all of your details EXACTLY AS THEY
+WOULD APPEAR ON THE ELECTORAL ROLL:
+
+https://pirateparty.org.au/w/images/b/b4/NSW_Application_Form.pdf
+
+It is required by NSW law that you FILL IT OUT BY HAND
+USING BLUE OR BLACK PEN. Do not diverge from this or the
+form will be considered invalid. They are very strict about
+this because democracy. If you have a writing disability,
+please let us know and we will make alternative
+arrangements for you.
+
+Once you have mailed your form to us, it would be much
+appreciated if you could return to this email and click
+this link to let the Secretary know to check the mailbox:
+
+https://join.pirateparty.org.au/nsw/{{ member_id }}
+
+It is a requirement of the Party Constitution[1] that all
+members of Pirate Party Australia are members of their
+local state branch. You will continue to receive reminders
+to provide this form until it is received.
+
+We apologise for New South Wales electoral law being such a
+nightmare. Please do however spare a thought for your
+Secretary who has to receive and manage the organisation
+of these hand-written forms due to these archaic,
+anti-democratic laws.
+
+We thank you for your continued support!
+
+[1]: https://pirateparty.org.au/constitution/#2.1(5)
+
+Apologies for the yelling too. If you had HTML email
+enabled, you would have seen bold text instead. ;)
+
+--
+Yours sincerely,
+
+Daniel Judge
+Secretary
+Pirate Party Australia
+
+M: 0438 255 857
+W: http://www.pirateparty.org.au
+E: daniel.judge@pirateparty.org.au
+T: @feenicks
+
+--
+Pirate Party Australia is a political party based around
+the core tenets offreedom of information and culture; civil
+and digital liberties; privacy and anonymity; and
+government transparency.
+
+Donate today! http://pirateparty.org.au/donate
