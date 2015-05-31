@@ -71,8 +71,8 @@ T: @feenicks
 
 --
 Pirate Party Australia is a political party based around
-the core tenets offreedom of information and culture; civil
-and digital liberties; privacy and anonymity; and
+the core tenets of freedom of information and culture;
+civil and digital liberties; privacy and anonymity; and
 government transparency.
 
 Donate today! http://pirateparty.org.au/donate
